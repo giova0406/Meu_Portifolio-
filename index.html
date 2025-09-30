@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Giovanna de Oliveira — Portfólio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Zalando+Sans+Expanded&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar" aria-label="Navegação principal">
+        <ul id="menu-principal">
+          <li><a href="#home" aria-current="page">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li>
+            <a href="GiovannaCV.pdf" download="" type="application/pdf">
+              Baixar CV
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="conteudo" id="home">
+      <div class="titulo">
+        <h1>Giovanna <br />de Oliveira</h1>
+      </div>
+      <div class="subtitulo">
+        <h2>Estudantede ADS</h2>
+      </div>
+      <div class="terceiro">
+        <p>Construindo minha jornada na área de tecnologia</p>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <main>
+      <section class="hero" id="home" aria-label="Apresentação">
+        <div class="profile-pic" aria-hidden="true">
+          <img src="fotogio.png" alt="Foto de Giovanna de Oliveira" />
+        </div>
+      </section>
+
+      <div class="scroll-down" aria-hidden="true">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+
+      <!-- SOBRE -->
+      <section id="sobre" class="container" aria-labelledby="titulo-sobre">
+        <h2 id="titulo-sobre">Sobre mim</h2>
+
+        <div class="foto-container">
+          <img
+            src="programadora-removebg-preview.png"
+            class="sobre-foto"
+            alt="Ilustração de programadora no notebook"
+            loading="lazy"
+          />
+        </div>
+
+        <p>
+          Sou <strong>Giovanna de Oliveira</strong>, estudante de
+          <strong>Análise e Desenvolvimento de Sistemas</strong> e
+          <strong>Informática</strong>. Tenho foco em
+          <strong>desenvolvimento front-end</strong>, unindo lógica e design
+          para criar interfaces intuitivas e responsivas. Também atuo em
+          <strong>correção e aprimoramento de sistemas</strong>, buscando
+          melhorar a experiência do usuário e a qualidade dos projetos. Sou
+          motivada por <strong>aprendizado contínuo</strong> e gosto de
+          transformar ideias em soluções digitais funcionais e bem estruturadas.
+        </p>
+      </section>
+
+      <!-- HABILIDADES -->
+      <article class="card" aria-labelledby="titulo-hab">
+        <div class="icon" aria-hidden="true">
+          <i class="fas fa-toolbox"></i>
+        </div>
+        <h3 id="titulo-hab">Habilidades &amp; Ferramentas</h3>
+
+        <div class="skills" aria-label="Lista de habilidades">
+          <span class="badge html"
+            ><i class="fa-brands fa-html5" aria-hidden="true"></i> HTML</span
+          >
+          <span class="badge css"
+            ><i class="fa-brands fa-css3-alt" aria-hidden="true"></i> CSS</span
+          >
+          <span class="badge js"
+            ><i class="fa-brands fa-js" aria-hidden="true"></i> JavaScript</span
+          >
+
+          <span class="badge git"
+            ><i class="fa-brands fa-git-alt" aria-hidden="true"></i> Git</span
+          >
+        </div>
+      </article>
+
+      <!-- PROJETOS -->
+      <section
+        id="projetos"
+        class="container"
+        aria-labelledby="titulo-projetos"
+      >
+        <h2 id="titulo-projetos">Projetos</h2>
+
+        <div class="grid projects">
+          <!-- Bombs Bar -->
+          <div class="card">
+            <a
+              href="https://giova0406.github.io/Bar_Bombs/"
+              target="_blank"
+              rel="noopener"
+              class="project-link"
+              aria-label="Abrir Bombs Bar — Menu de Drinks"
+            >
+              <img
+                src="bombs.png"
+                alt="Preview do projeto Bombs Bar — Menu de Drinks"
+                class="project-img"
+                loading="lazy"
+              />
+            </a>
+            <h3>Bombs Bar — Menu de Drinks</h3>
+            <div class="tags">
+              <span class="tag html">HTML</span>
+              <span class="tag css">CSS</span>
+            </div>
+          </div>
+
+          <!-- FixIt -->
+          <div class="card">
+            <a
+              href="#"
+              class="project-link"
+              aria-label="Abrir FixIt — Bug Tracker"
+            >
+              <img
+                src="https://assets.plan.io/images/blog/8-bug-tracking-tools.png"
+                alt="Preview do projeto FixIt — Bug Tracker"
+                class="project-img"
+                loading="lazy"
+              />
+            </a>
+            <h3>FixIt — Bug Tracker</h3>
+            <div class="tags">
+              <span class="tag html">HTML</span>
+              <span class="tag css">CSS</span>
+              <span class="tag js">JS</span>
+            </div>
+          </div>
+
+          <!-- Portfólio Interativo -->
+          <div class="card">
+            <a
+              href="#"
+              class="project-link"
+              aria-label="Abrir Portfólio Interativo"
+            >
+              <img
+                src="https://istitutopantheon.it/wp-content/uploads/2023/08/IP_master_realta_aumentata_website_compressa.png"
+                alt="Preview do projeto Portfólio Interativo"
+                class="project-img"
+                loading="lazy"
+              />
+            </a>
+            <h3>Portfólio Interativo</h3>
+            <div class="tags">
+              <span class="tag html">HTML</span>
+              <span class="tag css">CSS</span>
+              <span class="tag js">JS</span>
+            </div>
+          </div>
+
+          
+        </div>
+      </section>
+
+      <!-- CONTATO -->
+      <section id="contato" class="container" aria-labelledby="titulo-contato">
+        <h2 id="titulo-contato">Contato</h2>
+        <ul class="contact-list" aria-label="Canais de contato">
+          <li>
+            <a
+              href="mailto:giovannaoliveira72@gmail.com"
+              target="_blank"
+              rel="noopener"
+              aria-label="E-mail"
+            >
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/in/neuza-giovanna-de-oliveira-8281a021b"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://wa.me/393513670592"
+              target="_blank"
+              rel="noopener"
+              aria-label="WhatsApp"
+            >
+              <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/giova0406"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- BOTÃO FIXO PARA HOME -->
+    <a href="#home" class="home-fixed" aria-label="Ir para Home">
+      <i class="fas fa-house" aria-hidden="true"></i>
+    </a>
+
+    <!-- RODAPÉ -->
+    <footer class="site-footer">
+      <a href="#home" class="scroll-top" aria-label="Voltar ao topo">
+        <i class="fas fa-chevron-up" aria-hidden="true"></i>
+      </a>
+      <div class="footer-content">
+        <p>&copy; 2025 Giovanna de Oliveira</p>
+        <nav class="footer-nav" aria-label="Rodapé">
+          <a
+            href="GiovannaCV.pdf"
+            download="Giovanna-de-Oliveira-CV.pdf"
+            target="_blank"
+            rel="noopener"
+            >Baixar Meu CV <i class="fas fa-file-pdf" aria-hidden="true"></i
+          ></a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

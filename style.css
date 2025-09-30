@@ -1,0 +1,536 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+:root {
+  --grad-a: #5b9c163e;
+  --grad-b: hsl(97, 72%, 23%);
+  --white: #fff;
+  --gray-light: #f5f5f5;
+  --gray-dark: #000000;
+
+  --card-text: #010000;
+}
+
+h3 {
+  font-family: "Google Sans Code", monospace;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, var(--grad-a), var(--grad-b));
+  color: var(--white);
+  line-height: 1.6;
+  cursor: pointer;
+}
+
+#home {
+  scroll-margin-top: 72px;
+}
+
+
+/* MINHA IMG DE PERFIL */
+.profile-pic img {
+  width: 100%;
+  height: 100vh;
+  object-fit: contain;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 38vh;
+  z-index: -1;
+}
+
+/* RODAPÉ – seta e afins */
+.scroll-down {
+  left: 100px;
+  bottom: 60px;
+  font-size: 2rem;
+  position: relative;
+  animation: bounce 1.5s infinite
+}
+
+/* PAG INICIAL */
+.conteudo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  height: 90vh;
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.titulo {
+  height: 67vh;
+  font-size: 39px;
+  overflow: hidden;
+  margin-right: 500px;
+
+  font-family: "Google Sans Code", monospace;
+  flex-direction: column;
+}
+
+.subtitulo {
+  height: 55vh;
+  font-size: 27px;
+
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: flex-end;
+  padding-bottom: 95px;
+  gap: 12px;
+
+
+
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.terceiro {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: flex-end;
+  padding-bottom: 45px;
+  gap: 12px;
+  height: 35vh;
+  font-size: 35px;
+
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* NAVBAR */
+.navbar {
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1000;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color .3s ease
+}
+
+.navbar ul li a:hover {
+  color: hsl(115, 20%, 87%)
+}
+
+/* HERO */
+.hero {
+  width: 90%;
+  text-align: center;
+  align-items: center;
+  padding: 0;
+  color: #fff;
+  justify-content: center;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem
+}
+
+
+.scroll-top {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #0a0909;
+  font-size: 1.5rem;
+  text-decoration: none;
+  z-index: 2;
+  transition: color .3s ease
+}
+
+.scroll-top:hover {
+  color: #000;
+  transform: translateX(-50%) translateY(-5px)
+}
+
+.scroll-top i {
+  pointer-events: none
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0)
+  }
+
+  50% {
+    transform: translateY(10px)
+  }
+}
+
+/* SEÇÕES */
+.sobre-content {
+  display: block;
+  /* mantido como está para não mudar layout */
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  min-height: 70vh;
+  padding-block: 48px;
+}
+
+.sobre-texto {
+  flex: 1;
+  text-align: left;
+  max-width: 600px
+}
+
+.foto-container img {
+  display: block;
+  margin: 0 auto 1rem;
+  /* centraliza e dá espaço abaixo */
+  width: 340px;
+  /* aumente/diminua aqui */
+  max-width: 90vw;
+  /* responsivo em telas menores */
+  height: auto;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 3rem 1.25rem
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--gray-dark);
+  font-family: "Philosopher", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container p {
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.2rem
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem
+}
+
+.card {
+  border-radius: 14px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.card:hover {
+  transform: scale(1.03)
+}
+
+.card i {
+  color: #242472
+}
+
+.project-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.tags {
+  margin: 1rem 0
+}
+
+.tags span {
+  display: inline-block;
+  background: #f5f5f5;
+  padding: .4rem .8rem;
+  border-radius: 30px;
+  margin: 0 .3rem;
+  font-size: .85rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.tags .tag {
+  display: inline-block;
+  padding: .4rem .8rem;
+
+  margin: 0 .3rem;
+  font-size: .85rem;
+  font-weight: 600;
+  color: #fff
+}
+
+.tags .html {
+  background: #e44c26c4
+}
+
+.tags .css {
+  background: #264ce4c9
+}
+
+.tags .js {
+  background: #F0DB4F;
+  color: #000
+}
+
+/* BOTÕES (mantido o último estilo) */
+.btn {
+  display: inline-block;
+  padding: .5rem .9rem;
+  background: linear-gradient(135deg, var(--grad-a), var(--grad-b));
+  color: #fff;
+  text-decoration: none;
+  border-radius: 40px;
+  font-weight: 600;
+  transition: .25s ease;
+}
+
+.btn:hover {
+  filter: brightness(1.07);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, .18)
+}
+
+/* RODAPÉ (mantido o último) */
+
+
+/* PROJETOS – detalhes */
+.project .thumb {
+  height: 140px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: .9rem;
+  background: #eee;
+}
+
+.project .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .4s ease;
+  filter: saturate(1.05)
+}
+
+.project:hover .thumb img {
+  transform: scale(1.04)
+}
+
+.project header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .6rem;
+  margin-bottom: .35rem
+}
+
+.project h3 {
+  margin: 0;
+  color: var(--gray-dark);
+  line-height: 1.2
+}
+
+/* “badge” genérica usada nos projetos (mantida) */
+.badge {
+  background: linear-gradient(135deg, var(--grad-a), var(--grad-b));
+  color: #fff;
+  font-size: .8rem;
+  font-weight: 700;
+  padding: .25rem .6rem;
+  border-radius: 999px;
+}
+
+/* HABILIDADES */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 12px 0 18px;
+  justify-content: center
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 40px;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, .08);
+  font-size: .95rem;
+  line-height: 1;
+  white-space: nowrap;
+  transition: transform .15s ease, background .2s ease;
+  font-family: "Google Sans Code", monospace;
+  font-style: normal;
+}
+
+.badge.html {
+  background: #e44c2695
+}
+
+.badge.css {
+  background: #264ce475
+}
+
+.badge.js {
+  background: #f0da4fa6;
+  color: #000
+}
+
+
+
+.badge.git {
+  background: #f04f3393
+}
+
+
+
+.badge i {
+  font-size: 1rem;
+  color: inherit
+}
+
+.badge:hover {
+  transform: translateY(-2px);
+  background: #3a4270
+}
+
+/* CONTATO */
+.contact-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.contact-list li a {
+  font-size: 1.8rem;
+  color: var(--white);
+  background: rgba(255, 255, 255, .15);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: .3s;
+}
+
+.contact-list li a:hover {
+  background: var(--white);
+  color: var(--grad-a);
+  transform: translateY(-3px)
+}
+
+.contact-list a {
+  color: var(--gray-dark);
+  text-decoration: none;
+  background: var(--white);
+  padding: .5rem 1rem;
+  border-radius: 8px;
+  display: inline-block
+}
+
+.contact-list a:hover {
+  background: var(--gray-light)
+}
+
+/* rolagem suave (opcional) */
+html {
+  scroll-behavior: smooth;
+}
+
+/* estilo do botão fixo */
+.home-fixed {
+  right: 5px;
+  width: 44px;
+  height: 44px;
+  position: fixed;
+  color: #fff;
+  justify-content: center;
+  text-decoration: none;
+  bottom: 0;
+
+}
+
+.home-fixed:hover {
+  opacity: .9;
+  animation: home-fixed 1s ease-in-out infinite alternate;
+}
+
+@keyframes home-fixed {
+
+  75% {
+    color: #00ff73;
+    text-shadow: 0 0 10px #00ff7325;
+  }
+}
+
+
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: .9rem;
+  background: var(--gray-dark);
+  color: var(--white);
+  margin-top: 2rem;
+}
+
+/* cor padrão do link no rodapé */
+.site-footer .footer-nav a {
+  color: #5aff1e6a;
+  text-decoration: none;
+  /* opcional */
+}
